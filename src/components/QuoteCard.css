@@ -1,0 +1,131 @@
+.quoteCard{
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    text-align: center;
+    align-items: center;
+    margin: auto 5px;
+    justify-content: center;
+}
+
+.quoteCard__title{
+    color: #FFF;
+    text-align: center;
+    text-shadow: 4px 6px 0px rgba(0, 0, 0, 0.17);
+    font-family: Fredoka One;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 340px;
+    margin-bottom: 40px;
+}
+
+.quoteCard__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quoteCard__footer{
+    margin-bottom: 30px;
+}
+
+.quoteCard__btn{
+    margin-top: 30px;
+    width: 180px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.60);
+}
+
+/* text{
+    fill: #727272;
+}
+tspan{
+    text-align: center;
+    font-family: Fredoka;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+} */
+
+@media (min-width: 768px){
+    .quoteCard__title{
+        font-size: 36px;
+        width: 440px;
+    }
+}
+
+
+
+.quoteCard__pharse {
+    color: #727272;
+    font-family: Fredoka;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    display:flex;
+    background-color:#fff;
+    padding:25px 20px;
+    border-radius:30px;
+    margin: 30px auto;
+    width: 400px;
+    position:relative;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.quoteCard__pharse:before,
+.quoteCard__pharse:after {
+    content:"";
+    background-color:#fff;
+    border-radius:50%;
+    display:block;
+    position:absolute;
+}
+
+.quoteCard__pharse:before {
+    width:44px;
+    height:44px;
+    top:-12px;
+    left:28px;
+    box-shadow:-50px 30px 0 -12px #fff;
+    
+}
+
+.quoteCard__pharse:after {
+    bottom:-10px;
+    right:26px;
+    width:30px;
+    height:30px;
+    box-shadow:40px -34px 0 0 #fff,
+               -28px -6px 0 -2px #fff,
+               -24px 17px 0 -6px #fff,
+               -5px 25px 0 -10px #fff;
+    
+}
+
+.quoteCard__img{
+    background-image: url('/bga1.png');
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 800px;
+    height: 400px;
+    border: 2px solid red;
+    
+} 
+
+.quoteCard__footer{
+    color: #fff;
+    font-family: Fredoka;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
